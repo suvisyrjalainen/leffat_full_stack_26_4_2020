@@ -4,7 +4,7 @@ async function hae_elokuva(){
   var vuosi = document.getElementById("vuosi").value;
   var posteri = document.getElementById("leffan_posteri");
 
-  var hakurimpsu = 'http://www.omdbapi.com/?t=' + leffan_nimi + '&y=' + vuosi +'&apikey=a95f3723';
+  var hakurimpsu = 'https://www.omdbapi.com/?t=' + leffan_nimi + '&y=' + vuosi +'&apikey=a95f3723';
   console.log(hakurimpsu);
   const response = await fetch(hakurimpsu);
   const data = await response.json();
